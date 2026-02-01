@@ -1,10 +1,10 @@
-// PAGE 1
+// Gate page
 const wrongs = [
   "Hmm 🤔 Not quite…",
   "Nope 😌 Try again",
   "Hint 💡 The name I whisper",
   "Wrong ❌ but cute",
-  "Access denied 🚫 (jk)"
+  "Almost… but not yet ❤️"
 ];
 
 function checkAnswer() {
@@ -19,12 +19,12 @@ function checkAnswer() {
   }
 }
 
-// PAGE 2
+// Journey page
 function goFinal() {
   window.location.href = "final.html";
 }
 
-// PAGE 3
+// Final page
 let noSize = 1;
 
 function noClicked() {
@@ -38,5 +38,7 @@ function noClicked() {
 
 function yesClicked() {
   document.querySelector(".buttons").style.display = "none";
-  document.getElementById("finalMsg").classList.remove("hidden");
+  const msg = document.getElementById("finalMsg");
+  msg.classList.remove("hidden");
+  msg.style.animation = "fadeUp 1.2s ease";
 }
