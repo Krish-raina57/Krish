@@ -1,15 +1,42 @@
-function moveNo() {
-  const noBtn = document.getElementById("noBtn");
-  const x = Math.random() * 200 - 100;
-  const y = Math.random() * 200 - 100;
-  noBtn.style.transform = `translate(${x}px, ${y}px)`;
+// PAGE 1
+const wrongs = [
+  "Hmm 🤔 Not quite…",
+  "Nope 😌 Try again",
+  "Hint 💡 The name I whisper",
+  "Wrong ❌ but cute",
+  "Access denied 🚫 (jk)"
+];
+
+function checkAnswer() {
+  const val = document.getElementById("answer").value.toLowerCase().trim();
+  const msg = document.getElementById("msg");
+
+  if (val === "samy") {
+    window.location.href = "journey.html";
+  } else {
+    msg.innerText = wrongs[Math.floor(Math.random() * wrongs.length)];
+    msg.style.color = "#ff5c8a";
+  }
+}
+
+// PAGE 2
+function goFinal() {
+  window.location.href = "final.html";
+}
+
+// PAGE 3
+let noSize = 1;
+
+function noClicked() {
+  const no = document.getElementById("no");
+  noSize -= 0.15;
+  no.style.transform = `scale(${noSize})`;
+  no.style.position = "absolute";
+  no.style.left = Math.random() * 80 + "%";
+  no.style.top = Math.random() * 80 + "%";
 }
 
 function yesClicked() {
-  document.querySelector(".question").style.display = "none";
-  document.getElementById("finalMessage").style.display = "block";
-}
-
-function playMusic() {
-  document.getElementById("bg-music").play();
+  document.querySelector(".buttons").style.display = "none";
+  document.getElementById("finalMsg").classList.remove("hidden");
 }
