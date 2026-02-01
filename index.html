@@ -1,53 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Happy 1st Anniversary ❤️</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <title>Just One Question 🤍</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Background Music -->
-  <audio id="bg-music" src="music/song.mp3" loop></audio>
+<div class="center">
+  <h1>Who are you? 🤍</h1>
+  <input id="answer" placeholder="Type your answer..." />
+  <button onclick="checkAnswer()">Submit</button>
+  <p id="msg"></p>
+</div>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <h1>Happy 1st Anniversary ❤️</h1>
-    <p>You are my today, my tomorrow, my always.</p>
-    <button onclick="playMusic()">Play Our Song 🎶</button>
-  </section>
-
-  <!-- MEMORIES -->
-  <section class="memories">
-    <h2>Our Little Memories 📸</h2>
-    <div class="gallery">
-      <img src="images/memory1.jpg" alt="Memory">
-      <img src="images/her1.jpg" alt="Her">
-      <img src="images/her2.jpg" alt="Us">
-    </div>
-  </section>
-
-  <!-- QUESTION -->
-  <section class="question">
-    <h2>Will you stay with me forever? 💖</h2>
-    <div class="buttons">
-      <button id="yesBtn" onclick="yesClicked()">Yes 💕</button>
-      <button id="noBtn" onmouseover="moveNo()">No 😜</button>
-    </div>
-  </section>
-
-  <!-- FINAL MESSAGE -->
-  <section class="final" id="finalMessage">
-    <h2>Thank you for choosing me ❤️</h2>
-    <p>
-      One year down, forever to go.  
-      No matter what life brings, I promise to stand by you,  
-      love you harder, and choose you every single day.
-    </p>
-    <p class="sign">— Yours, Always</p>
-  </section>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
