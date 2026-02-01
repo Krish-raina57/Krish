@@ -1,95 +1,51 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
-}
-
 body {
-  background: linear-gradient(to bottom, #ffd6e8, #fff);
-  color: #333;
+  background: #fff0f6;
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
+  padding: 40px;
 }
 
-section {
-  padding: 60px 20px;
+.center input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
 }
 
-.hero h1 {
-  font-size: 2.5rem;
-  color: #e75480;
-}
-
-.hero p {
-  margin: 15px 0;
-  font-size: 1.2rem;
-}
-
-.hero button {
-  padding: 10px 20px;
+button {
+  padding: 10px 25px;
+  margin: 10px;
+  border-radius: 25px;
   border: none;
-  background: #e75480;
+  background: #ff5c8a;
   color: white;
-  border-radius: 20px;
   cursor: pointer;
 }
 
-.memories h2 {
-  margin-bottom: 20px;
-}
-
-.gallery {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-}
-
-.gallery img {
-  width: 180px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.question h2 {
-  margin-bottom: 20px;
-}
-
-.buttons {
+.timeline {
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
-.buttons button {
-  padding: 12px 25px;
-  border-radius: 25px;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 15px;
+  width: 220px;
 }
 
-#yesBtn {
-  background-color: #ff5c8a;
-  color: white;
+.card img {
+  width: 100%;
+  border-radius: 12px;
 }
 
-#noBtn {
-  background-color: #ccc;
-}
-
-.final {
+.hidden {
   display: none;
 }
 
-.final h2 {
-  color: #e75480;
-  margin-bottom: 15px;
-}
-
-.sign {
+#finalMsg img {
+  width: 250px;
+  border-radius: 20px;
   margin-top: 20px;
-  font-style: italic;
 }
